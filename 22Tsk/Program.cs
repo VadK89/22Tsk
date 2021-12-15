@@ -39,7 +39,7 @@ namespace _22Tsk
             g1 = Convert.ToInt32(Console.ReadLine()); 
             Console.WriteLine("Введите границу 2 рандомизации");
             g2 = Convert.ToInt32(Console.ReadLine());
-            //Создание и вывод массива
+            //Создание и вывод массива случайных чисел
             array = new int[r];
             Random random = new Random();
             for (int i = 0; i < r; i++)
@@ -55,8 +55,8 @@ namespace _22Tsk
             tsk1.Start();
             tsk2.Wait();
             Console.WriteLine();
-            Console.WriteLine(sum);
-            Console.WriteLine(max);
+            Console.WriteLine("Сумма элементов массива {0}", sum);
+            Console.WriteLine("Максимальное число в массиве {0}", max);
             Console.ReadKey();
         }
     }
